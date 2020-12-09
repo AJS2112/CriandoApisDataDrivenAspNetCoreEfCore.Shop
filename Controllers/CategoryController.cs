@@ -10,6 +10,13 @@ public class CategoryController : ControllerBase
         return "GET";
     }
 
+    [HttpGet]
+    [Route("{id:int}")]
+    public string GetById(int id)
+    {
+        return "GET " + id.ToString();
+    }
+
     [HttpPost]
     [Route("")]
     public string Post()
