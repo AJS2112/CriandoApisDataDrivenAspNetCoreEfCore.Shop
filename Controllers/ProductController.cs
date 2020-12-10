@@ -58,7 +58,7 @@ namespace Shop.Controllers
             [FromBody] Product model
             )
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 context.Products.Add(model);
                 await context.SaveChangesAsync();
