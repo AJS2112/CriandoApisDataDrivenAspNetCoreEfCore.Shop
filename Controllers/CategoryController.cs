@@ -6,7 +6,7 @@ using Shop.Data;
 using Shop.Models;
 
 [Route("categories")]
-public class CategoryController : ControllerBase
+public class CategoryController : Controller
 {
     [HttpGet]
     [Route("")]
