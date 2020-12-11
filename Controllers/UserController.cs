@@ -53,7 +53,7 @@ namespace Shop.Controllers
         }
 
         [HttpPut]
-        [Route("{id:int")]
+        [Route("{id:int}")]
         [Authorize(Roles = "manager")]
         public async Task<ActionResult<User>> Put(
             [FromServices] DataContext context,
